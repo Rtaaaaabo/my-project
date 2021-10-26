@@ -20,11 +20,4 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-
-  it('タイトルが表示されていること', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('my-project app is running!');
-  });
 });
